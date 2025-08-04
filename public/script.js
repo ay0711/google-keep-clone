@@ -13,7 +13,7 @@ onAuthStateChanged(auth, (user) => {
     if (user) {
         currentUser = user;
         show.innerHTML = `
-        <!---------------   <h3>Welcome ${user.displayName}</h3> --------------->
+        <h3>Welcome ${user.displayName}</h3>
             <img src="${user.photoURL}" alt="Profile Picture" style="width: 30px; height: 30px; border-radius: 100%;" />
         `;
         loadNotes();
